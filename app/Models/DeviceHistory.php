@@ -25,7 +25,6 @@ class DeviceHistory extends Model
     protected $casts = [
         'old_uptime' => 'integer',
         'new_uptime' => 'integer',
-        'created_at' => 'datetime',
     ];
 
     public function device()

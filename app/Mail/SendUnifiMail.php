@@ -28,7 +28,6 @@ class SendUnifiMail extends Mailable
      */
     public function build()
     {
-
         return $this->subject($this->data['subjek'])
                     ->view('mail.unifi-mail');
     }
