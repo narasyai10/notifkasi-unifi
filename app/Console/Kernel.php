@@ -16,11 +16,11 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
         $schedule->command('unifi:sync-wan')
-            ->everyTenMinutes()
+            ->everyMinute()
             ->withoutOverlapping();
 
         $schedule->command('unifi:sync-devices')
-            ->everyTenMinutes()
+            ->everyMinute()
             ->withoutOverlapping();
     }
 
